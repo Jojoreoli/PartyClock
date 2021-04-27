@@ -1,0 +1,47 @@
+.relogio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 5em 0;
+  font-family: 'Original Surfer', cursive;
+}
+
+.relogio__display {
+  font-size: 3em;
+  color: white;
+}
+
+.relogio__botao {
+  margin: 1em 0 0 0;
+  border: none;
+  text-decoration: none;
+  font-size: 2em;
+  background: none;
+  color: white;
+  font-family: 'Original Surfer', cursive;
+
+}
+
+.ativado {
+  animation: bg infinite .5s alternate linear;
+}
+
+.desativado {
+  background-color: #ff9999;
+}
+
+@keyframes bg {
+  from {
+    background-color: 	#ff0000
+  }
+
+  50% {
+    background-color: #00ff00
+  }
+
+  to {
+    background-color: 	#0000ff
+  }
+
+}
